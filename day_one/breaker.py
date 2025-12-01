@@ -42,11 +42,12 @@ def part_two():
         dial_ptr += distance
         
         # left turns require an extra increment when zero is crossed
+        # when dial starts at zero, do not increment.
         if dial_ptr <= 0 and start != 0:
             count+=1
 
         # determines how many times zero was crossed in turn
-        count+= abs(dial_ptr)//100
+        count+=abs(dial_ptr)//100
         
         # round pointer to the actual position of the dial
         dial_ptr %= 100
