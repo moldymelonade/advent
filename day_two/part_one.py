@@ -27,7 +27,6 @@ for num_range in ranges:
     #add to total if invalid
     for i in range(start,end+1):
         if not(is_valid(i)):
-            print(i)
             total += i
 
 print(total)

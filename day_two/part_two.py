@@ -1,5 +1,6 @@
 file = open('Python/advent/day_two/input.txt', 'r')
 ranges = file.read().split(',')
+file.close()
 total = 0
 
 
